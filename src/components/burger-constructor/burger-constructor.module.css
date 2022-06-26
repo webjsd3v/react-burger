@@ -1,0 +1,52 @@
+.burger_constructor{
+  height: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  position: relative;
+}
+
+.lists{
+  list-style: none;
+  height: 464px;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.lists::-webkit-scrollbar {
+  width: 8px;
+  background: #2F2F37;
+}
+
+.lists::-webkit-scrollbar-thumb {
+  background: #8585AD;
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+  background: #5a5a74;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+}
+
+.price_button{
+  max-width: 568px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  font-family: 'Iceland', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 36px;
+}
+
+

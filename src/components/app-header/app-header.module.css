@@ -36,5 +36,6 @@
 }
 
 .account{
-  margin-left: auto;
+  position: absolute;
+  right: 0;
 }

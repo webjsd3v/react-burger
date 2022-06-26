@@ -1,0 +1,6 @@
+.content{
+  max-width: 1248px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

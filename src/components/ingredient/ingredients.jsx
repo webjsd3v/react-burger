@@ -1,6 +1,7 @@
 import React from 'react';
 import {Counter, CurrencyIcon} from "@ya.praktikum/react-developer-burger-ui-components";
 import style from './ingredients.module.css'
+import PropTypes from "prop-types";
 
 function Ingredient({image, name, price, count}){
   return (
@@ -16,6 +17,13 @@ function Ingredient({image, name, price, count}){
       <p className={`${style.name} text text_type_main-default`}>{name}</p>
     </li>
   );
+}
+
+Ingredient.propTypes = {
+  image: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.number,
+  count: PropTypes.number
 }
 
 export default Ingredient;

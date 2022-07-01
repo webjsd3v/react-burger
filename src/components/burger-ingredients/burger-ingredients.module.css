@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+}
+
+.lists{
+  list-style: none;
+  max-height: 716px;
+  overflow-x: auto;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.lists::-webkit-scrollbar {
+  max-height: 664px;
+  width: 8px;
+  background: #2F2F37;
+}
+
+.lists::-webkit-scrollbar-thumb {
+  background: #8585AD;
+}
+
+.lists::-webkit-scrollbar-thumb:hover {
+  background: #5a5a74;
+}

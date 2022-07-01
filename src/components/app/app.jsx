@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <AppHeader/>
-      <main className={`${style.content} mt-10`}>
-        <BurgerConstructor/>
+      <main className={`${style.content}`}>
         <BurgerIngredients/>
+        <BurgerConstructor/>
       </main>
     </>
   );

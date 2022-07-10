@@ -7,19 +7,23 @@ import {getApiReactBurgers} from "../../utils/api-react-burger";
 
 function App() {
   const [data, setData] = React.useState([]);
+  const [load, setLoad] = React.useState(false);
   React.useEffect(() => {
     getApiReactBurgers()
       .then(dataBurger => setData(dataBurger))
       .catch(err => console.log(err))
+      .finally(() => setLoad(true))
   },[])
 
   return (
     <>
       <AppHeader/>
-      <main className={`${style.content}`}>
-        <BurgerIngredients dataIngredients={data}/>
-        <BurgerConstructor dataConstructor={data}/>
-      </main>
+      {load &&
+        <main className={`${style.content}`}>
+          <BurgerIngredients dataIngredients={data}/>
+          <BurgerConstructor dataConstructor={data}/>
+        </main>
+      }
     </>
   );
 }

@@ -4,7 +4,7 @@ import style from './ingredients.module.css'
 import PropTypes from "prop-types";
 import ingredientType from "../../utils/ingredient-type";
 
-function Ingredient({data, count, modalOpen, key}){
+function Ingredient({data, count, modalOpen}){
    const click = () => {
      modalOpen(data)
    }
@@ -28,8 +28,7 @@ function Ingredient({data, count, modalOpen, key}){
 
 
 Ingredient.propTypes = {
-  key: PropTypes.any.isRequired,
-  data: PropTypes.objectOf(ingredientType).isRequired,
+  data: PropTypes.any.isRequired,
   count: PropTypes.number,
   modalOpen: PropTypes.func.isRequired
 }

@@ -1,0 +1,13 @@
+.details{
+  max-height: 374px;
+  text-align: center;
+}
+
+.lists{
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}

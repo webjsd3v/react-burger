@@ -32,7 +32,7 @@ function IngredientDetails({data, key}) {
 
 IngredientDetails.propTypes = {
   key: PropTypes.any,
-  data: PropTypes.objectOf(ingredientType).isRequired
+  data: PropTypes.any.isRequired
 }
 
 export default IngredientDetails;

@@ -28,7 +28,7 @@ function Ingredient({data, count, modalOpen}){
 
 
 Ingredient.propTypes = {
-  data: PropTypes.any.isRequired,
+  data: ingredientType.isRequired,
   count: PropTypes.number,
   modalOpen: PropTypes.func.isRequired
 }

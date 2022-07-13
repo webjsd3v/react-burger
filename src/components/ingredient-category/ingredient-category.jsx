@@ -2,19 +2,19 @@ import React from 'react';
 import Ingredient from "../ingredient/ingredients";
 import style from './ingredient-category.module.css'
 import PropTypes from 'prop-types';
+import ingredientType from "../../utils/ingredient-type";
 
-function IngredientCategory({title, id, data}) {
+function IngredientCategory({title, id, data, modalClick}) {
   return (
     <li className={`${style.list} mb-10`}>
       <h3 className='text text_type_main-medium mr-6 mb-6' id={id}>{title}</h3>
       <ul className={`${style.lists} ml-4`}>
-        {data.map(item => (
+        {data.map(data => (
             <Ingredient
-              name={item.name}
-              price={item.price}
-              image={item.image}
+              data={data}
               count={0}
-              key={item._id}
+              key={data._id}
+              modalOpen={modalClick}
             />
           )
         )}
@@ -26,7 +26,8 @@ function IngredientCategory({title, id, data}) {
 IngredientCategory.propTypes = {
   title: PropTypes.string,
   id: PropTypes.string,
-  data: PropTypes.array.isRequired
+  data: PropTypes.arrayOf(ingredientType).isRequired,
+  modalClick: PropTypes.func.isRequired
 }
 
 export default IngredientCategory;

@@ -1,0 +1,41 @@
+.header {
+  margin: 0;
+  height: 100%;
+  min-height: 56px;
+  max-height: 56px;
+  background: #1C1C21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  min-height: 58px;
+  max-height: 58px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.account{
+  position: absolute;
+  right: 0;
+}
